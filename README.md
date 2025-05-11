@@ -1,6 +1,8 @@
 # TMOD
 A Trail-based Off-road Multimodal Dataset for Traversable Pathway Segmentation under Challenging Illumination Conditions
-![Alt text](/lidar_stereo.png)
+<p align="center">
+  <img src="/lidar_stereo.png" width="500"/>
+</p>
 
 ## Introduction
 TOMD is a multimodal dataset specifically designed to capture complex, unstructured trail-like environments using a medium-scale all-terrain robot platform. The dataset includes synchronized high-fidelity 128-channel 3D LiDAR, stereo imagery, GNSS, IMU, telemetry control signals, and ambient illumination measurements. Data was collected through repeated traversals of various routes under changing environmental conditions.
