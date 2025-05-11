@@ -17,7 +17,7 @@ TOMD is a multimodal dataset specifically designed to capture complex, unstructu
   
 - **Lux Meter**: Yoctopuce Light V4 ambient light sensor, with a resolution of 0.01 lux and a measurement range up to 83,000 lux at 10 Hz sampling rate.
 <p align="center">
-  <img src="/robot.png"/>
+  <img src="/robot.jpg"/>
 </p>
 
 
@@ -41,7 +41,8 @@ The dataset is provided in `.7z` compressed format. After downloading, please ex
     
 - **Windows**:
   Use [7-Zip](https://www.7-zip.org/) GUI or right-click the `.7z` file → "Extract Here"
- 
+
+## Data Discription
 After extraction, the folder structure will look like:
 ```
 TOMD/
@@ -63,4 +64,43 @@ TOMD/
   │   └── Control/                     # Robot motion commands
   │       └── cmd_vel.csv              # timestamp, linear & angular velocities (x/y/z)
 ```
-  
+### Calibration File Format
+We provide a `calibration.txt` file for each sequence, which contains:
+
+- **Extrinsic matrix** between the LiDAR and the stereo camera  
+- **Intrinsic matrix** of the stereo camera  
+- **Distortion coefficients** (if applicable)
+
+#### Plain Text Format
+
+```text
+Extrinsic:
+R:
+-0.00913489 -0.999751  0.0203534
+ 0.0402352  -0.0207053 -0.998976
+ 0.999148   -0.00830661 0.0404143
+t: -0.0902282 0.12678 0.0139012
+
+Intrinsic:
+826.947 0       1012.73
+0       737.323  573.967
+0       0        1
+```
+
+#### JSON-like Format
+
+```json
+Extrinsic:
+[[-0.00913489, -0.999751, 0.0203534, -0.0902282],
+ [ 0.0402352,  -0.0207053, -0.998976, 0.12678],
+ [ 0.999148,   -0.00830661, 0.0404143, 0.0139012],
+ [0, 0, 0, 1]]
+
+Intrinsic:
+[[826.947, 0, 1012.73],
+ [0, 737.323, 573.967],
+ [0, 0, 1]]
+
+Distortion:
+[0, 0, 0, 0]
+```
