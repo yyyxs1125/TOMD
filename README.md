@@ -1,7 +1,7 @@
 # TMOD
 A Trail-based Off-road Multimodal Dataset for Traversable Pathway Segmentation under Challenging Illumination Conditions
 <p align="center">
-  <img src="/lidar_stereo.png" width="500"/>
+  <img src="/lidar_stereo.png" width="800"/>
 </p>
 
 ## Introduction
@@ -16,6 +16,10 @@ TOMD is a multimodal dataset specifically designed to capture complex, unstructu
 - **GNSS**: u-blox ZED-F9P-0xB module with multi-band GNSS and RTK capabilities, embedded in the ZEDx system powered by NVIDIA Jetson Orin NX. Delivers up to 20 Hz updates with 0.01 m ± 1 ppm CEP accuracy.
   
 - **Lux Meter**: Yoctopuce Light V4 ambient light sensor, with a resolution of 0.01 lux and a measurement range up to 83,000 lux at 10 Hz sampling rate.
+<p align="center">
+  <img src="/robot.png"/>
+</p>
+
 
 ## Data Access
 You can access the full dataset via the [Durham Collection](https://collections.durham.ac.uk/collections/r2dn39x159k).
