@@ -17,7 +17,7 @@ TOMD is a multimodal dataset specifically designed to capture complex, unstructu
   
 - **Lux Meter**: Yoctopuce Light V4 ambient light sensor, with a resolution of 0.01 lux and a measurement range up to 83,000 lux at 10 Hz sampling rate.
 <p align="center">
-  <img src="/robot.jpg"/>
+  <img src="/robot.jpg" width="400"/>
 </p>
 
 
