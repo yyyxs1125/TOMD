@@ -1,4 +1,4 @@
-# TMOD
+# TOMD
 A Trail-based Off-road Multimodal Dataset for Traversable Pathway Segmentation under Challenging Illumination Conditions
 <p align="center">
   <img src="/lidar_stereo.png" width="800"/>
